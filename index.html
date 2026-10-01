@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="SELIVA Hannover – persönliche Unterstützung im Alltag, Haushalt, bei Besorgungen, Begleitung und Technik. Lokal in Hannover-Südstadt, Bult und Zoo.">
+<meta name="theme-color" content="#6e8b7a">
+<title>SELIVA Hannover | Einfach leichter im Alltag</title>
+<link rel="canonical" href="https://seliva.de/">
+<meta property="og:title" content="SELIVA Hannover – Einfach leichter im Alltag">
+<meta property="og:description" content="Persönliche Unterstützung im Alltag in Hannover-Südstadt, Bult und Zoo.">
+<meta property="og:url" content="https://seliva.de/">
+<meta property="og:type" content="website">
+<style>
+:root{
+  --cream:#fbf8f2;
+  --paper:#fffdf9;
+  --sage:#6f8c7b;
+  --sage-dark:#405f50;
+  --sage-soft:#e6eee8;
+  --peach:#dca985;
+  --peach-soft:#f7e8dc;
+  --sun:#e8c96f;
+  --ink:#223029;
+  --muted:#6e7973;
+  --line:#e8e4dc;
+  --white:#fff;
+  --shadow:0 18px 55px rgba(43,63,52,.12);
+  --radius:24px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:var(--ink);
+  background:var(--cream);
+  line-height:1.58;
+}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit}
+.wrap{max-width:1180px;margin:auto;padding:0 22px}
+.topline{
+  background:var(--sage-dark);color:white;font-size:.88rem
+}
+.topline .wrap{min-height:40px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+nav{
+  position:sticky;top:0;z-index:40;
+  background:rgba(251,248,242,.94);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(232,228,220,.85)
+}
+.navinner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.wordmark{font-size:1.35rem;font-weight:900;letter-spacing:.12em}
+.tagline{font-size:.72rem;color:var(--muted);margin-top:1px}
+.mark{width:44px;height:44px;flex:0 0 44px}
+.links{display:flex;align-items:center;gap:18px}
+.links>a:not(.button){text-decoration:none;color:#516158;font-size:.92rem}
+.button{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  text-decoration:none;border:0;border-radius:14px;padding:12px 17px;
+  font:inherit;font-weight:800;cursor:pointer;transition:.2s ease
+}
+.button:hover{transform:translateY(-1px)}
+.primary{background:var(--sage-dark);color:white;box-shadow:0 8px 20px rgba(64,95,80,.18)}
+.light{background:white;color:var(--sage-dark);border:1px solid #d8e1da}
+.hero{padding:62px 0 74px;overflow:hidden;position:relative}
+.hero:before{
+  content:"";position:absolute;left:-180px;top:-160px;width:500px;height:500px;border-radius:50%;
+  background:radial-gradient(circle,#eef2df 0%,rgba(238,242,223,0) 72%);z-index:-1
+}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:54px;align-items:center}
+.kicker{display:inline-flex;gap:8px;align-items:center;color:var(--sage-dark);font-weight:850;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--peach)}
+h1{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(3rem,6.7vw,5.65rem);font-weight:500;line-height:.96;
+  letter-spacing:-.048em;margin:17px 0 22px
+}
+.hero h1 em{font-style:normal;color:var(--sage-dark)}
+.hero-copy{font-size:1.14rem;color:var(--muted);max-width:680px}
+.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:28px}
+.checks{display:flex;gap:17px;flex-wrap:wrap;margin-top:25px;font-size:.89rem;color:#526057}
+.checks span:before{content:"✓";font-weight:900;color:var(--sage);margin-right:6px}
+.photo-stage{height:570px;position:relative}
+.photo-main{
+  position:absolute;right:0;top:0;width:72%;height:88%;border-radius:34px;overflow:hidden;
+  box-shadow:var(--shadow);background:#ddd
+}
+.photo-main img{object-position:center 34%}
+.photo-small{
+  position:absolute;left:0;bottom:0;width:43%;height:47%;border-radius:27px;overflow:hidden;
+  border:8px solid var(--cream);box-shadow:0 14px 40px rgba(43,63,52,.16)
+}
+.photo-small img{object-position:center 35%}
+.float-card{
+  position:absolute;left:6%;top:10%;background:rgba(255,255,255,.96);border:1px solid rgba(255,255,255,.8);
+  padding:13px 15px;border-radius:16px;box-shadow:0 14px 35px rgba(43,63,52,.14);
+  font-size:.87rem;max-width:190px
+}
+.float-card strong{display:block;color:var(--sage-dark);font-size:.98rem}
+.sunshape{position:absolute;right:-36px;bottom:34px;width:120px;height:120px;border-radius:50%;background:var(--sun);opacity:.5;z-index:-1}
+section{padding:72px 0}
+.sectionhead{max-width:770px;margin-bottom:29px}
+.eyebrow{font-size:.77rem;letter-spacing:.11em;text-transform:uppercase;font-weight:900;color:var(--sage)}
+h2{
+  font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.25rem,4.7vw,3.7rem);
+  font-weight:500;line-height:1.05;letter-spacing:-.035em;margin:10px 0 12px
+}
+.sectionhead p{font-size:1.04rem;color:var(--muted);margin:0}
+.promise{background:var(--paper)}
+.promise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.promise-card{border:1px solid var(--line);border-radius:20px;padding:21px;background:white}
+.promise-card .num{font-family:Georgia,serif;font-size:1.8rem;color:var(--peach);margin-bottom:8px}
+.promise-card h3{margin:0 0 5px;font-size:1.05rem}
+.promise-card p{margin:0;color:var(--muted);font-size:.92rem}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service{
+  background:white;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  box-shadow:0 7px 28px rgba(43,63,52,.055);transition:.2s ease
+}
+.service:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.service-photo{height:190px;background:var(--sage-soft)}
+.service-body{padding:21px}
+.service-icon{width:42px;height:42px;border-radius:14px;background:var(--sage-soft);display:grid;place-items:center;font-size:1.1rem;margin-bottom:11px}
+.service h3{margin:0 0 6px;font-size:1.13rem}
+.service p{color:var(--muted);font-size:.92rem;margin:0 0 12px}
+.service ul{margin:0;padding-left:18px;color:#56645c;font-size:.9rem}
+.service li{margin:5px 0}
+.soft{background:linear-gradient(180deg,#edf3ee,#f8f2e9)}
+.story-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:center}
+.story-photo{height:540px;border-radius:32px;overflow:hidden;box-shadow:var(--shadow)}
+.story-photo img{object-position:center 24%}
+.story-copy p{color:var(--muted);font-size:1.02rem}
+.values{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+.value{background:white;border:1px solid var(--line);border-radius:17px;padding:15px}
+.value b{display:block;margin-bottom:3px}
+.value span{color:var(--muted);font-size:.88rem}
+.price-section{background:var(--sage-dark);color:white}
+.price-section .sectionhead p{color:#dce7e0}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.price-card{background:#4f6c5d;border:1px solid rgba(255,255,255,.12);padding:23px;border-radius:22px}
+.price-card.feature{background:white;color:var(--ink);transform:translateY(-8px)}
+.price-card .chip{display:inline-block;background:rgba(255,255,255,.12);border-radius:999px;padding:5px 9px;font-size:.72rem;font-weight:800}
+.price-card.feature .chip{background:var(--peach-soft);color:#865e45}
+.price-card h3{margin:13px 0 4px}
+.price-card .price{font-size:2.35rem;font-weight:900;letter-spacing:-.045em}
+.price-card .price span{font-size:.93rem;font-weight:700}
+.price-card small{opacity:.78}
+.price-card ul{padding-left:18px}
+.price-card li{margin:6px 0}
+.price-card.feature li,.price-card.feature small{color:var(--muted)}
+.price-note{margin-top:18px;color:#d7e2dc;font-size:.86rem}
+.boundary-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.boundary{background:white;border:1px solid var(--line);border-radius:19px;padding:19px}
+.boundary .x{width:36px;height:36px;border-radius:12px;background:#f5e5dd;display:grid;place-items:center;color:#a76648;font-weight:900;margin-bottom:10px}
+.boundary h3{margin:0 0 5px}
+.boundary p{margin:0;color:var(--muted);font-size:.91rem}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.step{background:white;border:1px solid var(--line);border-radius:20px;padding:20px}
+.step .circle{width:39px;height:39px;border-radius:50%;display:grid;place-items:center;background:var(--sage-soft);color:var(--sage-dark);font-weight:900}
+.step h3{font-size:1rem;margin:13px 0 5px}
+.step p{margin:0;color:var(--muted);font-size:.89rem}
+.faq details{background:white;border:1px solid var(--line);border-radius:15px;padding:14px 16px;margin:9px 0}
+.faq summary{cursor:pointer;font-weight:800}
+.faq p{color:var(--muted);margin-bottom:4px}
+.contactbox{
+  border-radius:32px;background:linear-gradient(135deg,#e9f0e9,#f8e7dc);padding:36px;
+  display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:start
+}
+.contactbox h2{margin-top:8px}
+.contactbox p{color:#5f6b64}
+.form{background:rgba(255,255,255,.82);border:1px solid rgba(255,255,255,.85);border-radius:21px;padding:20px}
+label{display:block;font-size:.81rem;color:var(--muted);margin:10px 0 5px}
+input,select,textarea{
+  width:100%;border:1px solid #d7ddd8;border-radius:11px;background:white;
+  padding:11px 12px;font:inherit;color:var(--ink)
+}
+textarea{min-height:95px;resize:vertical}
+.demo-note{font-size:.79rem;color:var(--muted);margin-top:9px}
+.area-strip{
+  background:white;border:1px solid var(--line);border-radius:18px;padding:16px 18px;margin-top:18px
+}
+.area-strip strong{color:var(--sage-dark)}
+footer{border-top:1px solid var(--line);padding:34px 0 48px;color:#7a837f;font-size:.84rem;background:var(--paper)}
+.footergrid{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.credit a{text-decoration:underline}
+@media(max-width:960px){
+  .hero-grid,.story-grid,.contactbox{grid-template-columns:1fr}
+  .services-grid,.promise-grid,.price-grid,.boundary-grid{grid-template-columns:1fr 1fr}
+  .process-grid{grid-template-columns:1fr 1fr}
+  .photo-stage{height:520px;max-width:680px}
+  .links>a:not(.button){display:none}
+  .price-card.feature{transform:none}
+}
+@media(max-width:620px){
+  .services-grid,.promise-grid,.price-grid,.boundary-grid,.process-grid,.values{grid-template-columns:1fr}
+  .hero{padding-top:45px}
+  .photo-stage{height:430px}
+  .photo-main{width:82%;height:88%}
+  .photo-small{width:48%;height:43%}
+  .float-card{left:1%;top:8%;max-width:158px;font-size:.78rem}
+  .wordmark{font-size:1.12rem}
+  .tagline{display:none}
+  section{padding:55px 0}
+}
+</style>
+</head>
+<body>
+
+<div class="topline">
+  <div class="wrap">
+    <span>Persönliche Unterstützung aus Hannover-Südstadt</span>
+    <span>Startphase · Termine nach Vereinbarung</span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap navinner">
+    <a class="brand" href="#top" aria-label="SELIVA Startseite">
+      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="21" cy="17" r="6" fill="#dca985"/>
+        <circle cx="43" cy="17" r="6" fill="#6f8c7b"/>
+        <path d="M12 31c8-7 15-8 20-1 5-7 12-6 20 1" fill="none" stroke="#405f50" stroke-width="5" stroke-linecap="round"/>
+        <path d="M17 39c7 10 14 14 15 14s8-4 15-14" fill="none" stroke="#6f8c7b" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+      <div>
+        <div class="wordmark">SELIVA</div>
+        <div class="tagline">Einfach leichter im Alltag.</div>
+      </div>
+    </a>
+    <div class="links">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#preise">Preise</a>
+      <a href="#ueber">Über SELIVA</a>
+      <a href="#faq">FAQ</a>
+      <a class="button primary" href="#kontakt">Anfragen</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="kicker"><span class="dot"></span> Südstadt · Bult · Zoo</div>
+      <h1>Mehr Zeit für das, was <em>wirklich zählt.</em></h1>
+      <p class="hero-copy">SELIVA unterstützt dort, wo im Alltag eine verlässliche Hand fehlt – beim Einkauf, im Haushalt, bei Terminen, mit Technik oder einfach dann, wenn Angehörige ein wenig Entlastung brauchen.</p>
+      <div class="actions">
+        <a class="button primary" href="#kontakt">Unverbindlich anfragen</a>
+        <a class="button light" href="#leistungen">Leistungen entdecken</a>
+      </div>
+      <div class="checks">
+        <span>persönlich & lokal</span>
+        <span>klare Preise</span>
+        <span>auch einmalig</span>
+      </div>
+    </div>
+
+    <div class="photo-stage" aria-label="Alltagshilfe und persönliche Unterstützung">
+      <div class="photo-main">
+        <img fetchpriority="high" referrerpolicy="no-referrer" src="https://images.pexels.com/photos/7345431/pexels-photo-7345431.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Lächelnde ältere Frau erhält eine Einkaufstasche">
+      </div>
+      <div class="photo-small">
+        <img loading="lazy" referrerpolicy="no-referrer" src="https://images.pexels.com/photos/3791666/pexels-photo-3791666.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Jüngere Frau unterstützt eine ältere Frau mit einem Smartphone">
+      </div>
+      <div class="float-card"><strong>Ein fester Ansprechpartner.</strong> Keine anonyme Vermittlungsplattform.</div>
+      <div class="sunshape"></div>
+    </div>
+  </div>
+</header>
+
+<section class="promise">
+  <div class="wrap">
+    <div class="promise-grid">
+      <div class="promise-card"><div class="num">01</div><h3>Persönlich</h3><p>Zum Start wird SELIVA bewusst klein und lokal geführt. Sie wissen, wer zu Ihnen kommt.</p></div>
+      <div class="promise-card"><div class="num">02</div><h3>Verlässlich</h3><p>Klare Absprachen zu Aufgabe, Zeit und Preis – ohne unnötige Verträge.</p></div>
+      <div class="promise-card"><div class="num">03</div><h3>Pragmatisch</h3><p>Von Einkauf bis Smartphone: Hilfe genau dort, wo sie den Alltag tatsächlich leichter macht.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="leistungen">
+  <div class="wrap">
+    <div class="sectionhead">
+      <div class="eyebrow">Unsere Leistungen zum Start</div>
+      <h2>Unterstützung, die sich Ihrem Alltag anpasst.</h2>
+      <p>SELIVA startet bewusst breit, aber mit klaren Grenzen: einfache haushaltsnahe und organisatorische Hilfe – keine Pflege und kein Fachhandwerk.</p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service">
+        <div class="service-photo"><img loading="lazy" referrerpolicy="no-referrer" src="https://images.pexels.com/photos/7345431/pexels-photo-7345431.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Einkaufshilfe für ältere Menschen"></div>
+        <div class="service-body"><div class="service-icon">🛒</div><h3>Einkauf & Besorgungen</h3><p>Wenn Einkauf, Apotheke, Post oder eine Abholung gerade nicht in den Tag passen.</p><ul><li>Lebensmittel & Drogerie</li><li>Apotheke und Post</li><li>Pakete & Rücksendungen</li><li>kleine Botengänge</li></ul></div>
+      </article>
+
+      <article class="service">
+        <div class="service-photo"><img loading="lazy" referrerpolicy="no-referrer" src="https://images.pexels.com/photos/7513131/pexels-photo-7513131.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Unterstützung bei Pflanzen und Wohnung"></div>
+        <div class="service-body"><div class="service-icon">⌂</div><h3>Haushalt & Alltag</h3><p>Leichte Unterstützung bei ganz normalen Aufgaben zu Hause.</p><ul><li>Aufräumen & leichte Reinigung</li><li>Wäsche & Betten</li><li>Ordnung schaffen</li><li>Pflanzenpflege</li></ul></div>
+      </article>
+
+      <article class="service">
+        <div class="service-photo"><img loading="lazy" referrerpolicy="no-referrer" src="https://images.pexels.com/photos/3791666/pexels-photo-3791666.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Persönliche Technikhilfe für Seniorin"></div>
+        <div class="service-body"><div class="service-icon">☻</div><h3>Begleitung & Angehörigenhilfe</h3><p>Persönliche Unterstützung für ältere Menschen und ihre Angehörigen – ohne Pflegeleistungen.</p><ul><li>Begleitung zu Terminen</li><li>Spaziergänge & Einkauf</li><li>Alltagsorganisation</li><li>Rückmeldung an Angehörige nach Absprache</li></ul></div>
+      </article>
+
+      <article class="service">
+        <div class="service-body"><div class="service-icon">⌘</div><h3>Technikhilfe</h3><p>Geduldige Unterstützung bei den kleinen digitalen Hürden des Alltags.</p><ul><li>Smartphone & Tablet</li><li>Apps & Online-Termine</li><li>Drucker/WLAN-Basisprobleme</li><li>E-Mail, Fotos & digitale Ordnung</li></ul></div>
+      </article>
+
+      <article class="service">
+        <div class="service-body"><div class="service-icon">🔑</div><h3>Wohnungs- & Abwesenheitsservice</h3><p>Ein kurzer, verlässlicher Blick nach dem Zuhause, wenn Sie unterwegs sind.</p><ul><li>Briefkasten leeren</li><li>Pflanzen gießen</li><li>Wohnung kontrollieren</li><li>Haustiere füttern nach Absprache</li></ul></div>
+      </article>
+
+      <article class="service">
+        <div class="service-body"><div class="service-icon">🧰</div><h3>Einfacher Hausservice</h3><p>Kleine Hilfstätigkeiten rund um Wohnung und Objekt, soweit keine Fachqualifikation erforderlich ist.</p><ul><li>Mülltonnen bereitstellen</li><li>Kontrollgänge</li><li>leichte Garten-/Ordnungstätigkeiten</li><li>weitere Hilfe nach Absprache</li></ul></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="soft" id="ueber">
+  <div class="wrap story-grid">
+    <div class="story-photo">
+      <img loading="lazy" referrerpolicy="no-referrer" src="https://images.pexels.com/photos/3791666/pexels-photo-3791666.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Freundliche persönliche Unterstützung im Alltag">
+    </div>
+    <div class="story-copy">
+      <div class="eyebrow">Die Idee hinter SELIVA</div>
+      <h2>Manchmal braucht es keinen großen Dienst. Nur jemanden, der zuverlässig da ist.</h2>
+      <p>SELIVA entsteht aus einer einfachen Idee: Viele alltägliche Aufgaben sind für sich genommen klein – werden aber schnell zur Belastung, wenn Zeit, Mobilität oder eine helfende Hand fehlen.</p>
+      <p>Deshalb soll SELIVA nicht anonym wirken und auch keine Leistungen versprechen, für die besondere Fachqualifikationen nötig sind. Zum Start geht es um praktische, respektvolle Hilfe im direkten Umfeld von Hannover-Südstadt.</p>
+      <div class="values">
+        <div class="value"><b>Diskret</b><span>Respekt vor Privatsphäre und Zuhause.</span></div>
+        <div class="value"><b>Organisiert</b><span>Aufgabe und Kosten vorher klar besprechen.</span></div>
+        <div class="value"><b>Menschlich</b><span>Keine hektische Plattformlogik.</span></div>
+        <div class="value"><b>Flexibel</b><span>Einmalig oder regelmäßig nach Vereinbarung.</span></div>
+      </div>
+      <div class="area-strip"><strong>Startgebiet:</strong> Hannover-Südstadt, Bult und Zoo. Weitere Stadtteile gern nach Absprache.</div>
+    </div>
+  </div>
+</section>
+
+<section class="price-section" id="preise">
+  <div class="wrap">
+    <div class="sectionhead">
+      <div class="eyebrow" style="color:#c8ddd0">Transparente Startpreise</div>
+      <h2>Einfach verstehen, was Hilfe kostet.</h2>
+      <p>Die Preise sind als Startmodell gedacht und werden vor der Veröffentlichung noch einmal gegen den konkreten Gewerbe- und Steuerstatus geprüft.</p>
+    </div>
+    <div class="price-grid">
+      <div class="price-card">
+        <span class="chip">Basis</span>
+        <h3>Haushalt & Besorgungen</h3>
+        <div class="price">29 € <span>/ Std.</span></div>
+        <small>Mindestbuchung 90 Minuten</small>
+        <ul><li>leichte Haushaltshilfe</li><li>Einkäufe & Botengänge</li><li>Ordnung & einfache Alltagshilfe</li></ul>
+      </div>
+      <div class="price-card feature">
+        <span class="chip">Persönlich</span>
+        <h3>Alltagsbegleitung</h3>
+        <div class="price">32 € <span>/ Std.</span></div>
+        <small>Mindestbuchung 90 Minuten</small>
+        <ul><li>Terminbegleitung</li><li>Unterstützung älterer Menschen</li><li>Angehörigenentlastung</li></ul>
+      </div>
+      <div class="price-card">
+        <span class="chip">Spezial</span>
+        <h3>Technik & Organisation</h3>
+        <div class="price">35 € <span>/ Std.</span></div>
+        <small>Abrechnung nach Zeitaufwand</small>
+        <ul><li>Smartphone & Tablet</li><li>Online-Termine</li><li>digitale Ordnung & Basis-Einrichtung</li></ul>
+      </div>
+    </div>
+    <div class="price-note">Wohnungscheck ab 19 € je Kurzbesuch bis ca. 30 Minuten. Einfacher Hausservice ab 32 €/Std. Anfahrt im Startgebiet Südstadt, Bult & Zoo zunächst inklusive; außerhalb nach Absprache. Tatsächliche Auslagen wie Einkäufe oder Parkkosten werden getrennt abgerechnet.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sectionhead">
+      <div class="eyebrow">Klare Grenzen schaffen Vertrauen</div>
+      <h2>Was SELIVA zum Start bewusst nicht anbietet.</h2>
+    </div>
+    <div class="boundary-grid">
+      <div class="boundary"><div class="x">×</div><h3>Keine Pflege</h3><p>Keine Körperpflege, Medikamentengabe oder medizinische Versorgung. Seniorenunterstützung bedeutet hier reine Alltagshilfe.</p></div>
+      <div class="boundary"><div class="x">×</div><h3>Kein Taxi</h3><p>Begleitung zu Terminen ist möglich. Eine entgeltliche Personenbeförderung im eigenen Pkw gehört derzeit nicht zum Angebot.</p></div>
+      <div class="boundary"><div class="x">×</div><h3>Kein Fachhandwerk</h3><p>Keine Elektro-, Sanitär-, Heizungs- oder sonstigen Arbeiten, die eine besondere handwerksrechtliche Qualifikation voraussetzen.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="promise">
+  <div class="wrap">
+    <div class="sectionhead">
+      <div class="eyebrow">So läuft es</div>
+      <h2>Vier einfache Schritte.</h2>
+    </div>
+    <div class="process-grid">
+      <div class="step"><div class="circle">1</div><h3>Anfrage senden</h3><p>Kurz sagen, wobei Hilfe gebraucht wird und in welchem Stadtteil.</p></div>
+      <div class="step"><div class="circle">2</div><h3>Aufgabe klären</h3><p>Umfang, Termin, Preis und eventuelle Auslagen werden vorher abgesprochen.</p></div>
+      <div class="step"><div class="circle">3</div><h3>Persönlicher Termin</h3><p>Die vereinbarte Aufgabe wird zuverlässig und respektvoll erledigt.</p></div>
+      <div class="step"><div class="circle">4</div><h3>Nur wenn es passt</h3><p>Danach entscheiden Sie selbst: einmalige Hilfe oder regelmäßiger Termin.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="sectionhead"><div class="eyebrow">Häufige Fragen</div><h2>Gut zu wissen.</h2></div>
+    <details open><summary>Muss ich regelmäßig buchen?</summary><p>Nein. Einzeltermine sind ausdrücklich möglich. Bei wiederkehrenden Aufgaben kann später ein fester Rhythmus vereinbart werden.</p></details>
+    <details><summary>Kann ich SELIVA für meine Eltern oder Angehörigen anfragen?</summary><p>Ja. Umfang und Kommunikation können gemeinsam abgestimmt werden. Pflegerische oder medizinische Leistungen sind dabei ausgeschlossen.</p></details>
+    <details><summary>Kann über die Pflegekasse abgerechnet werden?</summary><p>Zum Start nicht. Dafür wäre in Niedersachsen für ein gewerbliches Angebot eine entsprechende Anerkennung erforderlich. Wenn dieser Bereich später aufgebaut wird, wird das transparent ausgewiesen.</p></details>
+    <details><summary>Wie werden Einkäufe und andere Auslagen abgerechnet?</summary><p>Auslagen werden getrennt vom Zeitaufwand dokumentiert und gegen Beleg abgerechnet. Größere Beträge werden vorher abgestimmt.</p></details>
+    <details><summary>Gibt es Termine abends oder am Wochenende?</summary><p>In der Startphase nach Vereinbarung. Die verfügbaren Zeiten werden vor der Veröffentlichung konkret festgelegt.</p></details>
+  </div>
+</section>
+
+<section id="kontakt">
+  <div class="wrap">
+    <div class="contactbox">
+      <div>
+        <div class="eyebrow">Unverbindlich kennenlernen</div>
+        <h2>Wobei darf SELIVA helfen?</h2>
+        <p>Für den Anfang genügt eine kurze Nachricht: Was soll erledigt werden, ungefähr wie lange und wo in Hannover?</p>
+        <div class="area-strip"><strong>Direkter Kontakt:</strong><br><a href="mailto:kontakt@seliva.de">kontakt@seliva.de</a><br><a href="https://seliva.de">seliva.de</a><br><br><strong>Rückruf gewünscht?</strong> Senden Sie uns Ihre Telefonnummer und ein passendes Zeitfenster per E-Mail. Wir melden uns persönlich bei Ihnen.</div>
+      </div>
+      <div class="form">
+        <label for="name">Name</label><input id="name" placeholder="Ihr Name">
+        <label for="service">Worum geht es?</label>
+        <select id="service">
+          <option>Haushalt & Alltag</option>
+          <option>Einkauf & Besorgungen</option>
+          <option>Begleitung / Angehörigenhilfe</option>
+          <option>Technikhilfe</option>
+          <option>Wohnungsservice</option>
+          <option>Einfacher Hausservice</option>
+          <option>Etwas anderes</option>
+        </select>
+        <label for="msg">Kurze Nachricht</label><textarea id="msg" placeholder="z. B. Einkauf einmal pro Woche, Hannover-Südstadt"></textarea>
+        <label for="phone">Telefon für Rückruf (optional)</label><input id="phone" type="tel" placeholder="Ihre Telefonnummer">
+        <label for="time">Wunschzeit (optional)</label><input id="time" placeholder="z. B. werktags 18–20 Uhr">
+        <button class="button primary" style="width:100%;margin-top:13px" type="button" onclick="sendMail()">E-Mail / Rückruf anfragen</button>
+        <div class="demo-note">Der Button öffnet Ihr E-Mail-Programm mit einer vorbereiteten Anfrage. Ihre Telefonnummer wird nicht öffentlich auf der Website angezeigt.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footergrid">
+    <div><strong>SELIVA Hannover</strong><br>Einfach leichter im Alltag.<br><br>Vorschau – noch nicht als gewerbliches Angebot veröffentlicht.</div>
+    <div class="credit">Bildmaterial in diesem Entwurf: Pexels / Andrea Piacquadio, Antoni Shkraba, SHVETS production.<br>Vor dem Livegang werden Bilder lokal eingebunden sowie Impressum und Datenschutz finalisiert.</div>
+  </div>
+</footer>
+<script>
+function sendMail(){
+  const n=document.getElementById('name')?.value.trim()||'';
+  const svc=document.getElementById('service')?.value||'';
+  const m=document.getElementById('msg')?.value.trim()||'';
+  const p=document.getElementById('phone')?.value.trim()||'';
+  const t=document.getElementById('time')?.value.trim()||'';
+  const body=`Hallo SELIVA,\n\nName: ${n}\nLeistung: ${svc}\n\nAnliegen:\n${m}\n\nRückrufnummer: ${p}\nWunschzeit: ${t}\n\nViele Grüße`;
+  window.location.href='mailto:kontakt@seliva.de?subject='+encodeURIComponent('Anfrage an SELIVA')+'&body='+encodeURIComponent(body);
+}
+</script>
+</body>
+</html>
